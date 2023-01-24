@@ -5,7 +5,7 @@ resource "azurerm_network_security_group" "NterrSG" {
   location            = "east us"
   resource_group_name = azurerm_resource_group.ankitrg.name
 
- security_rule {
+  security_rule {
     name                       = "AllowRDP"
     priority                   = 300
     direction                  = "Inbound"
@@ -20,6 +20,6 @@ resource "azurerm_network_security_group" "NterrSG" {
 
   tags = {
     Provisioner = "Terraform"
-    Managedby = "Neha"
+    Managedby   = "Neha"
   }
 }
