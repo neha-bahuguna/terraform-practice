@@ -1,10 +1,10 @@
 resource "azurerm_virtual_network" "nehavirtualnetwork" {
-  name                = "V-network"
-  location            = "east us"
-  resource_group_name = azurerm_resource_group.ankitrg.name
-  address_space       = ["10.0.0.0/16"]
+  name                = local.virtual_network.name
+  location            = local.location
+  resource_group_name = local.resource_group_name
+  address_space       = [local.virtual_network.address_space]
 
-  
+
   tags = {
     Provisioner = "Terraform"
     Managedby   = "Neha"

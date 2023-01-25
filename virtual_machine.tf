@@ -20,5 +20,5 @@ resource "azurerm_windows_virtual_machine" "appvm" {
     sku       = "2019-Datacenter"
     version   = "latest"
   }
- 
+
 }

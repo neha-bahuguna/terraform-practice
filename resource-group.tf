@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "ankitrg" {
   location = "east us"
 }
 
-  resource "azurerm_public_ip" "Publicip" {
+resource "azurerm_public_ip" "Publicip" {
   name                = "acceptanceTestPublicIp1"
   resource_group_name = azurerm_resource_group.ankitrg.name
   location            = "east us"
@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "ankitrg" {
   tags = {
     Provisioner = "Terraform"
     Managedby   = "Neha"
-    
+
   }
 }
 
