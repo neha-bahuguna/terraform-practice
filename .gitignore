@@ -6,3 +6,4 @@
 *.tfstate.*
 .terraform.lock.hcl
 confidential.tf
+neha_linux.pub
