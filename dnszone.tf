@@ -1,10 +1,10 @@
 
-resource "azurerm_dns_zone" "dnszone" {
-  name                = "nehadomain.com"
-  resource_group_name = local.resource_group_name
-  depends_on = [
+# resource "azurerm_dns_zone" "dnszone" {
+#   name                = "nehadomain.com"
+#   resource_group_name = local.resource_group_name
+#   depends_on = [
     
-  ]
+#   ]
   
 # resource "azurerm_dns_zone" "publiczone" {
 #   name                = "cloudportalhub.com"
@@ -24,4 +24,3 @@ resource "azurerm_dns_zone" "dnszone" {
 #   records             = [azurerm_public_ip.loadip.ip_address]
 # }
 
-}
